@@ -46,3 +46,5 @@ testem.log
 Thumbs.db
 .github/workflows/gh-pages
 .github/workflows/gh-pages.pub
+.github/workflows/gh-pages
+.github/workflows/gh-pages.pub
