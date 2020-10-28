@@ -8,15 +8,22 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-<div class="jumbotron text-center" style="margin-bottom: 0">
-  <h2>Welcome {{title}}</h2>
-
-  <p>OS: macOS Catalina 10.15.6
-
-  <p>IDE: VS Code
-</div>
-
-
-
   <!--Adding additional component to Application-->
-  <app-travel-request></app-travel-request>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="active">
+                <a class="nav-link" routerLink="/about" style="padding: 10px 15px 10px">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/travel-request" style="padding: 10px 15px 10px">Travel Request</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<router-outlet> </router-outlet>
